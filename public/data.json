@@ -1,0 +1,110 @@
+[
+  {
+    "logo_url": "https://cdn.simpleicons.org/react",
+    "name": "React",
+    "tag": "Frontend Library",
+    "description": "A JavaScript library for building interactive and reusable user interfaces.",
+    "category": "Frontend",
+    "difficulty": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/vue.js",
+    "name": "Vue.js",
+    "tag": "Frontend Framework",
+    "description": "A progressive JavaScript framework for building modern web interfaces.",
+    "category": "Frontend",
+    "difficulty": "Beginner",
+    "rating": 4.7
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/angular",
+    "name": "Angular",
+    "tag": "Web Framework",
+    "description": "A powerful framework for developing scalable and feature-rich web applications.",
+    "category": "Frontend",
+    "difficulty": "Advanced",
+    "rating": 4.6
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/javascript",
+    "name": "JavaScript",
+    "tag": "Programming Language",
+    "description": "A popular programming language used to create dynamic and interactive web applications.",
+    "category": "Programming",
+    "difficulty": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/typescript",
+    "name": "TypeScript",
+    "tag": "Typed JavaScript",
+    "description": "A strongly typed programming language that builds on JavaScript for safer development.",
+    "category": "Programming",
+    "difficulty": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/tailwindcss",
+    "name": "Tailwind CSS",
+    "tag": "CSS Framework",
+    "description": "A utility-first CSS framework for quickly building modern and responsive designs.",
+    "category": "Styling",
+    "difficulty": "Beginner",
+    "rating": 4.7
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/node.js",
+    "name": "Node.js",
+    "tag": "JavaScript Runtime",
+    "description": "A runtime environment that allows JavaScript to run outside the browser.",
+    "category": "Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/express",
+    "name": "Express.js",
+    "tag": "Backend Framework",
+    "description": "A lightweight Node.js framework for building web servers and APIs.",
+    "category": "Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.6
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/mongodb",
+    "name": "MongoDB",
+    "tag": "NoSQL Database",
+    "description": "A document-oriented database designed for flexible and scalable applications.",
+    "category": "Database",
+    "difficulty": "Intermediate",
+    "rating": 4.7
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/git",
+    "name": "Git",
+    "tag": "Version Control",
+    "description": "A distributed version control system used to track changes in source code.",
+    "category": "Tools",
+    "difficulty": "Beginner",
+    "rating": 4.9
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/github",
+    "name": "GitHub",
+    "tag": "Code Hosting",
+    "description": "A platform for hosting code, collaborating with developers, and managing projects.",
+    "category": "Tools",
+    "difficulty": "Beginner",
+    "rating": 4.9
+  },
+  {
+    "logo_url": "https://cdn.simpleicons.org/next.js",
+    "name": "Next.js",
+    "tag": "React Framework",
+    "description": "A React framework for building fast, scalable, and production-ready web applications.",
+    "category": "Frontend",
+    "difficulty": "Advanced",
+    "rating": 4.8
+  }
+]
