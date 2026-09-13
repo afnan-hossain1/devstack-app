@@ -1,28 +1,40 @@
-import React from 'react';
+// import React from 'react';
+import type { Iprogram } from '../../types/programType';
 
-const AvailableTech = ({program}) => {
+const AvailableTech = ({program}: {program: Iprogram[]}) => {
     console.log(program, 'AvailableTech card');
     return (
-        <div>
-            {
-                program.map((program) => {
-                    return <div className="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img
-                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        // <div>
+            <div className="grid grid-cols-3 gap-6 mt-6 mr-3">
+                {program.map((program:Iprogram) => {
+                    return (<div className="card bg-base-100 shadow-sm">
+                                <figure className="flex justify-between py-1 px-3">
+                                    
+                                    <img className=" w-13 h-13 object-cover rounded-md"
+                                src={program.logo_url}
                                 alt="Shoes" />
+                                    <span className="badge badge-xs badge-warning">{program.tag}</span>
                                 </figure>
-                                <div className="card-body">
-                                    <h2 className="card-title">Card Title</h2>
-                                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                                    <div className="card-actions justify-end">
-                                        <button className="btn btn-primary">Buy Now</button>
+                                <div className="card-body space-y-3">
+                                    <h2 className="card-title">{program.name}</h2>
+                                    <p className="font-semibold items-center">{program.description}</p>
+                                <div className="flex justify-between gap-3 items-center">
+                                    <span className="badge badge-soft badge-primary text-black">{program.category}</span>
+                                    <p>{program.difficulty}</p>
+                                    <h3 className="font-semibold flex items-center justify-center gap-1"><div className="text-orange-500 text-90px">
+                                        ★
+                                        </div> <span className="text-black-600">{program.rating}</span></h3>
+                                </div>
+                                    <div className="card-actions justify-center mt-4">
+                                        <button className="btn bg-black px-15 text-white btn-outline py-2.5">Add to Stack</button>
                                     </div>
                                 </div>
                             </div>
-                                    })
+                                    )})
+                                    
             }
-        </div>
+            </div>
+        // </div>
     );
 };
 
