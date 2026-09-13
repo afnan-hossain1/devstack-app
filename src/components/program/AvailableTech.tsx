@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import type { Iprogram } from '../../types/programType';
 import TechCard from './TechCard';
+import { toast } from 'react-toastify';
+import { Bounce } from 'react-toastify';
 
 const AvailableTech = ({program}: {program: Iprogram[]}) => {
     console.log(program, 'AvailableTech card');
@@ -12,10 +14,30 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
         
         if (!isAlreadyAdded) {
             setSelectedStack([...selectedStack, tech]);
+            // toast.success(`${tech.name} added to your stack!`);
+            toast.success(`${tech.name} added to your stack!`, {
+                position: "top-center",
+                autoClose: 6000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce, // Use the Bounce transition for the toast
+            });
+        } else{
+            toast.error(`${tech.name} is already in your stack!`);
         }
+        
     };
     const handleRemoveFromStack = (name: string) => {
         setSelectedStack(selectedStack.filter(item => item.name !== name));
+        toast.info(`Removed ${name} from your stack!`);
+    };
+    const handleClearAll = () => {
+        setSelectedStack([]);
+        toast.info('Cleared all technologies from your stack!');
     };
 
     return (
@@ -55,7 +77,8 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
                         <div className="justify-center card-actions mt-2">
                             {selectedStack.length > 0 && (
                                 <button 
-                                    onClick={() => setSelectedStack([])} 
+                                    // onClick={() => setSelectedStack([])} 
+                                    onClick={handleClearAll}
                                     className="btn btn-outline btn-error w-full text-xs py-1">
                                     Remove All
                                 </button>
