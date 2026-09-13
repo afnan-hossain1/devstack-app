@@ -42,12 +42,12 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
 
     return (
             <div className="flex justify-between items-top gap-3 ">
-                <div className="grid grid-cols-3 gap-6 mt-6 mr-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 mr-3">
                     {program.map((program:Iprogram, index: number) => {
                         return <TechCard key={index} program={program} onAdd={handleAddToStack} isAdded={selectedStack.some(item => item.name === program.name)} />;
                     })}
                 </div>
-                <div>
+                <div className="flex justify-end md:justify-center items-start w-full md:w-1/3">
                     <div className="card bg-base-100 card-md shadow-sm border border-gray-300 mt-6">
                         <div className="card-body space-y-3">
                             <h2 className="card-title text-lg font-bold text-black">Your Stack</h2>
