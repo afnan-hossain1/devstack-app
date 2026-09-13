@@ -10,6 +10,8 @@ const Program = ({programPromise}:ProgramProps) => {
 
     const program = use(programPromise);
     // console.log(program);
+    
+
     return <div className="container mx-auto flex flex-col space-y-4 py-4">
         <div className="flex flex-col space-y-2">
             <h2 className="text-4xl font-bold">Explore the <span className="bg-gradient-to-r from-[#DB2777] to-[#9333EA] bg-clip-text text-transparent">Technologies</span></h2>
