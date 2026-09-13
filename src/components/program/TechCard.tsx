@@ -37,7 +37,7 @@ const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
                             onClick={() => onAdd(program)} 
                             disabled={isAdded}
                             className={`btn w-full btn-outline text-sm font-semibold py-2 px-3 transition-all ${
-                                isAdded ? 'btn bg-pink-300 text-error  cursor-not-allowed hover:bg-transparent   w-full' : 'bg-black text-white'
+                                isAdded ? 'btn bg-pink-199 text-pink-199 text-error  cursor-not-allowed hover:bg-transparent   w-full' : 'bg-black text-white'
                             }`}
                         >
                             {isAdded ? "✓ Added to Stack" : "Add to Stack"}
