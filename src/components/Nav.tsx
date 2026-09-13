@@ -1,12 +1,15 @@
 import Logo from "../assets/logo-text.png"
 
+import Hamburger from "../assets/hamburger.png"
 
 const Nav = () => {
     return (
         <nav>
             <div className="container mx-auto flex justify-between items-center py-4">
-                <img src={Logo} alt="Logo" />
-                <ul className="flex space-x-4 items-center">
+                <img className="hidden md:flex w-32 h-auto" src={Logo} alt="Logo" />
+                <span className="block md:hidden text-left p-4"><img src={Hamburger} alt="Hamburger" /></span>
+
+                <ul className="hidden md:flex space-x-4 items-center">
                     <li className="text-[#DB2777]">Home</li>
                     <li>Technologies</li>
                     <li>Projects</li>

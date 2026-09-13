@@ -40,7 +40,7 @@ const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
                                 isAdded ? 'btn bg-pink-300 text-error  cursor-not-allowed hover:bg-transparent   w-full' : 'bg-black text-white'
                             }`}
                         >
-                            {isAdded ? "Added to Stack" : "Add to Stack"}
+                            {isAdded ? "✓ Added to Stack" : "Add to Stack"}
                         </button>
                         </div>
                     </div>
