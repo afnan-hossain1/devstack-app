@@ -16,7 +16,7 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
             setSelectedStack([...selectedStack, tech]);
             // toast.success(`${tech.name} added to your stack!`);
             toast.success(`${tech.name} added to your stack!`, {
-                position: "top-center",
+                position: "top-left",
                 autoClose: 6000,
                 hideProgressBar: false,
                 closeOnClick: false,

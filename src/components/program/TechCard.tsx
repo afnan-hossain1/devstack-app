@@ -23,10 +23,11 @@ const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
                 <div className="card-body space-y-3">
                     <h2 className="card-title">{program.name}</h2>
                     <p className="font-semibold items-center">{program.description}</p>
-                <div className="flex justify-between gap-3 items-center py-1 px-1">
+                <div className="flex justify-between gap-1 items-center w-full">
                     <span className="badge badge-soft badge-primary text-black">{program.category}</span>
                     <p>{program.difficulty}</p>
-                    <h3 className="font-semibold flex items-center justify-center gap-1"><div className="text-orange-500 text-90px">
+                    <h3 className="font-semibold flex items-center justify-center gap-1">
+                        <div className="text-orange-500 text-90px">
                         ★
                         </div> <span className="text-black-600">{program.rating}</span></h3>
                 </div>

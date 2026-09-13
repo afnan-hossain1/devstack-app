@@ -5,6 +5,7 @@ import Banner from './components/banner'
 import Nav from './components/Nav'
 import Program from './components/program/Program';
 import type { Iprogram } from "./types/programType"
+import Footer from './components/Footer';
 
 const programFetch = async():Promise<Iprogram[]> => {
   const response = await fetch('/data.json');
@@ -22,6 +23,9 @@ function App() {
       <Suspense fallback={<h2>Loading...</h2>}>
         <Program programPromise={programPromise} />
       </Suspense>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
