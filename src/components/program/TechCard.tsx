@@ -23,7 +23,7 @@ const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
                 <div className="card-body space-y-3">
                     <h2 className="card-title">{program.name}</h2>
                     <p className="font-semibold items-center">{program.description}</p>
-                <div className="flex justify-between gap-1 items-center w-full">
+                <div className="flex flex-col md:flex-row justify-between  gap-3 items-center">
                     <span className="badge badge-soft badge-primary text-black">{program.category}</span>
                     <p>{program.difficulty}</p>
                     <h3 className="font-semibold flex items-center justify-center gap-1">
