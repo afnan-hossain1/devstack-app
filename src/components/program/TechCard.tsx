@@ -12,7 +12,7 @@ const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
     // const [isSelected, setIsSelected] = useState(false)
     
     return (
-            <div className="flex flex-col sm:flex-row md:flex-row gap-[19px]">
+            <div className="flex flex-col sm:flex-row md:flex-row gap-4.75">
                 <div className="card bg-base-100 shadow-sm border border-gray-300 p-2">
                     <figure className="flex justify-between py-1 px-3">
                         

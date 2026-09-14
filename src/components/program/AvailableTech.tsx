@@ -51,9 +51,17 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
                     <div className="card bg-base-100 card-md shadow-sm border border-gray-300 mt-6">
                         <div className="card-body space-y-3">
                             <h2 className="card-title text-lg font-bold text-black">Your Stack</h2>
-                            <p className="text-gray-600">{`${selectedStack.length} technologies selected`}</p>
+                            {/* <p className="text-gray-600">{`${selectedStack.length} technologies selected`}</p> */}
                             {selectedStack.length === 0 ? (
-                            <p className="text-gray-400 text-sm my-4">No technologies selected yet</p>
+                                <p className="text-gray-400 text-sm">No technologies selected yet.</p>
+                            ) : (
+                                <p className="text-gray-600 text-sm">{`${selectedStack.length} technologies selected.`}</p>
+                            )}
+                            {selectedStack.length === 0 ? (
+                            // <p className="text-gray-400 text-sm my-4">No technologies selected yet</p>
+                                <div className="border-2 border-dashed border-gray-200 rounded-xl p-8 my-6 flex items-center justify-center">
+                                    <p className="text-gray-400 text-sm font-medium">Your stack is empty.</p>
+                                </div>
                             ) : (
                                 <div className="space-y-3 my-4">
                                 {selectedStack.map((tech, idx) => (
