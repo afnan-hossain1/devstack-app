@@ -20,7 +20,7 @@ function App() {
     <>
       <Nav />
       <Banner />
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense fallback={<h2 className="text-center text-3xl font-bold">Loading...</h2>}>
         <Program programPromise={programPromise} />
       </Suspense>
       <footer>

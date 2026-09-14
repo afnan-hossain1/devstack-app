@@ -27,10 +27,25 @@ const Footer = () => {
                 <a href="#" className="hover:underline text-gray-600">Contact</a>
                 <a href="#" className="hover:underline text-gray-600">Careers</a>
             </div>
+                        <div className="flex flex-col space-y-2">
+                <h2 className="text-lg font-semibold text-black mb-1">LEGAL</h2>
+                <a href="#" className="hover:underline text-gray-600">Privacy Policy</a>
+                <a href="#" className="hover:underline text-gray-600">Terms of Service</a>
+            </div>
         </div>
-        <p className="footer footer-left p-4 bg-base-300 text-base-content">
-              © 2026 DevStack. All rights reserved.
-        </p>
+        <div>
+            <div className="flex justify-btween">
+                <p className="footer footer-left p-4 bg-base-300 text-base-content">
+                    © 2026 DevStack. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <ul className="text-base-content flex justify-end gap-4">
+                    <a href="#" className="hover:underline text-gray-600">Privacy</a>
+                    <a href="#" className="hover:underline text-gray-600">Terms</a>
+                </ul>
+            </div>
+        </div>
         </>  
          
     );

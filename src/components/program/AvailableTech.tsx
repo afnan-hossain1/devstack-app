@@ -42,7 +42,7 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
 
     return (
             <div className="flex justify-between items-top gap-3 ">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 mr-3">
+                <div className="md:col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 m-3">
                     {program.map((program:Iprogram, index: number) => {
                         return <TechCard key={index} program={program} onAdd={handleAddToStack} isAdded={selectedStack.some(item => item.name === program.name)} />;
                     })}
@@ -55,7 +55,7 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
                             {selectedStack.length === 0 ? (
                                 <p className="text-gray-400 text-sm">No technologies selected yet.</p>
                             ) : (
-                                <p className="text-gray-600 text-sm">{`${selectedStack.length} technologies selected.`}</p>
+                                <p className="text-gray-600 text-sm my-4 px-8">{`${selectedStack.length} technologies selected.`}</p>
                             )}
                             {selectedStack.length === 0 ? (
                             // <p className="text-gray-400 text-sm my-4">No technologies selected yet</p>
@@ -67,14 +67,14 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
                                 {selectedStack.map((tech, idx) => (
                                     <div key={idx} className="flex justify-between items-center border border-gray-100 p-4 rounded-md gap-2">
                                         <div className="flex justify-between items-center gap-2">
-                                            <img src={tech.logo_url} className="w-5 h-6 object-cover rounded" alt={tech.name} />
-                                            <div>
+                                            <img src={tech.logo_url} className="w-5 h-6 rounded" alt={tech.name} />
+                                            <div className="flex flex-col justify-center items-start px-2.5">
                                                 <h4 className="font-semibold text-xs text-black">{tech.name}</h4>
                                                 <span className="text-[10px] text-gray-400">{tech.category}</span>
                                             </div>
                                             <button 
                                                 onClick={() => handleRemoveFromStack(tech.name)} 
-                                                className="text-gray-400 hover:text-red-500 text-sm font-bold px-1 cursor-pointer">
+                                                className="text-gray-400 hover:text-red-600 text-sm font-bold ml-10 p-3 cursor-pointer">
                                                 ✕
                                             </button>
                                         </div>
@@ -87,7 +87,7 @@ const AvailableTech = ({program}: {program: Iprogram[]}) => {
                                 <button 
                                     // onClick={() => setSelectedStack([])} 
                                     onClick={handleClearAll}
-                                    className="btn btn-outline btn-error w-full text-xs py-1">
+                                    className="btn btn-outline btn-error text-red-600 w-full text-xs py-1">
                                     Remove All
                                 </button>
                             )}

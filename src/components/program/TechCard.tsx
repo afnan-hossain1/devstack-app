@@ -8,8 +8,7 @@ interface TechCardProps {
 }
 // inter
 const TechCard = ({program, onAdd, isAdded}: TechCardProps) => {
-// const TechCard = ({program}: {program: Iprogram}) => {
-    // const [isSelected, setIsSelected] = useState(false)
+
     
     return (
             <div className="flex flex-col sm:flex-row md:flex-row gap-4.75">

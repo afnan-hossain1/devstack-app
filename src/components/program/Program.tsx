@@ -14,7 +14,7 @@ const Program = ({programPromise}:ProgramProps) => {
 
     return <div className="container mx-auto flex flex-col space-y-4 py-4">
         <div className="flex flex-col space-y-2">
-            <h2 className="text-4xl font-bold">Explore the <span className="bg-gradient-to-r from-[#DB2777] to-[#9333EA] bg-clip-text text-transparent">Technologies</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Explore the <span className="bg-linear-to-r from-[#DB2777] to-[#9333EA] bg-clip-text text-transparent">Technologies</span></h2>
             <p>Pick one technology per category to build your ideal stack.</p>
 
         </div>
